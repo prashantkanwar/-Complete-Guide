@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 婦人科 Fujinka – Complete Nepali Guide</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --rose: #b83a52;
+  --rose-light: #fdf0f3;
+  --rose-mid: #e8b4bf;
+  --rose-pale: #fdf6f8;
+  --bg: #faf5f7;
+  --card: #ffffff;
+  --text: #211318;
+  --muted: #7a5060;
+  --accent: #7b2840;
+  --green: #1e6e4a;
+  --green-light: #e8f5ee;
+  --blue: #1e4e8a;
+  --blue-light: #e8f0fb;
+  --purple: #5a2d82;
+  --purple-light: #f0eaf8;
+  --gold: #8a6300;
+  --gold-light: #fdf6e0;
+  --teal: #1a6870;
+  --teal-light: #e6f4f5;
+  --orange: #8a3d00;
+  --orange-light: #fdf0e6;
+  --border: #edd8de;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* ─── HEADER ─────────────────────────────── */
+header {
+  background: linear-gradient(135deg, #b83a52 0%, #6b1e30 60%, #3d0e1a 100%);
+  color: white;
+  padding: 2rem 1.5rem 2.8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+header::before { content:'🌸'; position:absolute; top:-5px; left:5px; font-size:6rem; opacity:0.07; }
+header::after  { content:'🌸'; position:absolute; bottom:-5px; right:5px; font-size:6rem; opacity:0.07; }
+header h1 { font-size:1.7rem; font-weight:700; margin-bottom:0.3rem; letter-spacing:0.02em; }
+header .jp { font-size:1rem; opacity:0.85; letter-spacing:0.15em; margin-bottom:0.3rem; }
+header .sub { font-size:0.85rem; opacity:0.75; }
+
+/* ─── STICKY NAV ─────────────────────────── */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: white;
+  border-bottom: 2px solid var(--rose-mid);
+  padding: 0.5rem 0.8rem;
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  box-shadow: 0 2px 10px rgba(184,58,82,0.1);
+}
+.sticky-nav a {
+  text-decoration:none;
+  background: var(--rose-light);
+  color: var(--rose);
+  border: 1px solid var(--rose-mid);
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.sticky-nav a:hover { background: var(--rose); color: white; }
+
+/* ─── TIP BAR ────────────────────────────── */
+.tip-bar {
+  background: var(--gold-light);
+  border-left: 4px solid #c8a020;
+  padding: 0.9rem 1.2rem;
+  margin: 1rem;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.83rem;
+  color: #5a4000;
+  line-height: 1.7;
+}
+.tip-bar strong { color: var(--gold); }
+
+/* ─── MAIN LAYOUT ────────────────────────── */
+main { max-width: 920px; margin: 0 auto; padding: 0 0.8rem 4rem; }
+
+section { margin-bottom: 2.5rem; scroll-margin-top: 70px; }
+
+.section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, var(--rose), var(--accent));
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.section-sub {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent);
+  border-left: 3px solid var(--rose-mid);
+  padding: 0.3rem 0.7rem;
+  margin: 0.8rem 0 0.6rem;
+  background: var(--rose-light);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ─── VOCAB GRID ─────────────────────────── */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+@media(min-width:580px) { .vocab-grid { grid-template-columns: 1fr 1fr; } }
+@media(min-width:800px) { .vocab-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+.vocab-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  position: relative;
+}
+.vocab-card:hover { box-shadow: 0 4px 15px rgba(184,58,82,0.12); border-color: var(--rose-mid); }
+.vocab-card .tag {
+  position: absolute; top: 8px; right: 8px;
+  font-size: 0.65rem; font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 8px;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.tag-basic  { background: #e8f5ee; color: var(--green); }
+.tag-med    { background: var(--blue-light); color: var(--blue); }
+.tag-sym    { background: var(--orange-light); color: var(--orange); }
+.tag-imp    { background: #fdecea; color: #c03030; }
+
+.v-jp   { font-size: 1.15rem; font-weight: 700; color: var(--accent); line-height: 1.3; }
+.v-kana { font-size: 0.78rem; color: var(--muted); font-style: italic; }
+.v-np   { font-size: 0.88rem; color: var(--text); font-weight: 600; margin-top: 0.1rem; }
+.v-en   { font-size: 0.75rem; color: #999; }
+.speak-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 0.95rem; padding: 0; color: var(--rose);
+  margin-left: 4px; vertical-align: middle;
+  transition: transform 0.2s;
+}
+.speak-btn:hover { transform: scale(1.25); }
+
+/* ─── SENTENCE CARDS ─────────────────────── */
+.sent-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--rose);
+  border-radius: 0 12px 12px 0;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.7rem;
+}
+.sent-card.green  { border-left-color: var(--green); }
+.sent-card.blue   { border-left-color: var(--blue); }
+.sent-card.purple { border-left-color: var(--purple); }
+.sent-card.gold   { border-left-color: var(--gold); }
+.sent-card.teal   { border-left-color: var(--teal); }
+.sent-card.orange { border-left-color: var(--orange); }
+
+.sent-label {
+  display: inline-block;
+  font-size: 0.68rem; font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px; margin-bottom: 0.45rem;
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.lb-rose   { background: var(--rose-light); color: var(--rose); }
+.lb-green  { background: var(--green-light); color: var(--green); }
+.lb-blue   { background: var(--blue-light); color: var(--blue); }
+.lb-purple { background: var(--purple-light); color: var(--purple); }
+.lb-gold   { background: var(--gold-light); color: var(--gold); }
+.lb-teal   { background: var(--teal-light); color: var(--teal); }
+.lb-orange { background: var(--orange-light); color: var(--orange); }
+.lb-red    { background: #fdecea; color: #c03030; }
+
+.sent-jp   { font-size: 1.05rem; font-weight: 700; color: var(--accent); line-height: 1.5; }
+.sent-kana { font-size: 0.78rem; color: var(--muted); margin: 0.1rem 0 0.25rem; font-style: italic; }
+.sent-np   { font-size: 0.88rem; color: var(--text); font-weight: 500; }
+
+/* ─── BODY / CONDITION / DOCTOR CARDS ───── */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+@media(min-width:580px) { .info-grid { grid-template-columns: 1fr 1fr; } }
+
+.info-card {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.ic-blue   { background: var(--blue-light); border: 1px solid #b0c8e8; }
+.ic-green  { background: var(--green-light); border: 1px solid #a0d0b8; }
+.ic-purple { background: var(--purple-light); border: 1px solid #c0a0d8; }
+.ic-gold   { background: var(--gold-light); border: 1px solid #d8b860; }
+.ic-teal   { background: var(--teal-light); border: 1px solid #90c8cc; }
+.ic-orange { background: var(--orange-light); border: 1px solid #d8a080; }
+.ic-rose   { background: var(--rose-light); border: 1px solid var(--rose-mid); }
+
+.ic-jp  { font-size: 1rem; font-weight: 700; }
+.ic-jp.blue   { color: var(--blue); }
+.ic-jp.green  { color: var(--green); }
+.ic-jp.purple { color: var(--purple); }
+.ic-jp.gold   { color: var(--gold); }
+.ic-jp.teal   { color: var(--teal); }
+.ic-jp.orange { color: var(--orange); }
+.ic-jp.rose   { color: var(--rose); }
+
+.ic-kana { font-size: 0.75rem; color: var(--muted); font-style: italic; }
+.ic-np   { font-size: 0.85rem; color: var(--text); font-weight: 600; margin-top: 0.15rem; }
+.ic-en   { font-size: 0.75rem; color: #888; }
+
+/* ─── EMERGENCY ─────────────────────────── */
+.emerg-card {
+  background: #fff3f3;
+  border: 2px solid #e06060;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.emerg-jp { font-size: 1.1rem; font-weight: 700; color: #b82020; }
+.emerg-kana { font-size: 0.78rem; color: #c05050; font-style: italic; margin: 0.1rem 0; }
+.emerg-np { font-size: 0.88rem; color: var(--text); }
+
+/* ─── COLOR / NUMBER GRIDS ───────────────── */
+.small-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+}
+@media(min-width:500px) { .small-grid { grid-template-columns: repeat(3, 1fr); } }
+@media(min-width:720px) { .small-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.sm-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  text-align: center;
+}
+.sm-jp { font-size: 0.95rem; font-weight: 700; color: var(--accent); }
+.sm-kana { font-size: 0.7rem; color: var(--muted); }
+.sm-np  { font-size: 0.78rem; color: var(--text); font-weight: 600; }
+
+/* ─── PHRASE TABLE ───────────────────────── */
+.phrase-row {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+.pr-jp  { font-size: 1rem; font-weight: 700; color: var(--accent); }
+.pr-np  { font-size: 0.85rem; color: var(--text); font-weight: 600; }
+.pr-kana { font-size: 0.72rem; color: var(--muted); font-style: italic; }
+
+/* ─── SCROLL UP BTN ──────────────────────── */
+#top-btn {
+  position: fixed; bottom: 1.5rem; right: 1.2rem;
+  background: var(--rose); color: white;
+  border: none; border-radius: 50%;
+  width: 44px; height: 44px;
+  font-size: 1.2rem; cursor: pointer;
+  box-shadow: 0 4px 15px rgba(184,58,82,0.4);
+  display: flex; align-items:center; justify-content:center;
+  z-index: 200;
+  transition: background 0.2s;
+}
+#top-btn:hover { background: var(--accent); }
+
+footer {
+  text-align:center; padding: 1.5rem 1rem;
+  font-size: 0.78rem; color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌸 婦人科 Complete Guide</h1>
+  <div class="jp">ふじんか・Fujinka・Gynecology</div>
+  <div class="sub">Japan Hospital – Nepali Complete Vocabulary &amp; Sentences</div>
+</header>
+
+<!-- NAV -->
+<nav class="sticky-nav">
+  <a href="#sec-menstruation">🩸 Menstruation</a>
+  <a href="#sec-symptoms">😣 Symptoms</a>
+  <a href="#sec-discharge">💧 Discharge</a>
+  <a href="#sec-conditions">🏥 Conditions</a>
+  <a href="#sec-body">🫀 Body Parts</a>
+  <a href="#sec-tests">🔬 Tests</a>
+  <a href="#sec-medicine">💊 Medicine</a>
+  <a href="#sec-pregnancy">🤰 Pregnancy</a>
+  <a href="#sec-contraception">🛡️ Contraception</a>
+  <a href="#sec-cancer">⚠️ Cancer/Check</a>
+  <a href="#sec-sent-register">💬 Reception</a>
+  <a href="#sec-sent-symptoms">💬 Symptoms说</a>
+  <a href="#sec-sent-period">💬 Period説明</a>
+  <a href="#sec-sent-doctor">💬 Doctor Q&amp;A</a>
+  <a href="#sec-sent-medicine">💬 Medicine</a>
+  <a href="#sec-sent-preg">💬 Pregnancy</a>
+  <a href="#sec-emergency">🚨 Emergency</a>
+  <a href="#sec-colors">🎨 Colors</a>
+  <a href="#sec-numbers">🔢 Numbers</a>
+  <a href="#sec-describe">📝 Describe Pain</a>
+</nav>
+
+<div class="tip-bar">
+  💡 <strong>Hospital पुगेपछि:</strong> Reception ma <strong>「婦人科をお願いします」</strong>(Fujinka wo onegaishimasu) बोल्नुस् – "Gynecology विभाग चाहिन्छ" भनेको हो।<br>
+  📋 Japan ma doctor sanga Nepali ma bolna garo bhaye <strong>「英語か通訳はありますか？」</strong>(Eigo ka tsuyaku wa arimasu ka?) – "English वा Translator छ?" भन्न सक्नुहुन्छ।
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════
+     1. MENSTRUATION VOCAB
+═══════════════════════════════════════════ -->
+<section id="sec-menstruation">
+  <h2 class="section-title">🩸 Menstruation – महिनावारी सम्बन्धी शब्दहरू</h2>
+
+  <div class="vocab-grid">
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">生理 <button class="speak-btn" onclick="sp('せいり')">🔊</button></div>
+      <div class="v-kana">せいり · Seiri</div>
+      <div class="v-np">महिनावारी / Period</div>
+      <div class="v-en">Most common word</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">月経 <button class="speak-btn" onclick="sp('げっけい')">🔊</button></div>
+      <div class="v-kana">げっけい · Gekkei</div>
+      <div class="v-np">महिनावारी (medical)</div>
+      <div class="v-en">Menstruation – doctor uses this</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">生理周期 <button class="speak-btn" onclick="sp('せいりしゅうき')">🔊</button></div>
+      <div class="v-kana">せいりしゅうき · Seiri shuuki</div>
+      <div class="v-np">महिनावारी चक्र / Period cycle</div>
+      <div class="v-en">Menstrual cycle length</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">生理期間 <button class="speak-btn" onclick="sp('せいりきかん')">🔊</button></div>
+      <div class="v-kana">せいりきかん · Seiri kikan</div>
+      <div class="v-np">महिनावारीको अवधि / Duration</div>
+      <div class="v-en">How many days it lasts</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">初潮 <button class="speak-btn" onclick="sp('しょちょう')">🔊</button></div>
+      <div class="v-kana">しょちょう · Shochou</div>
+      <div class="v-np">पहिलो महिनावारी / First period</div>
+      <div class="v-en">Menarche</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">閉経 <button class="speak-btn" onclick="sp('へいけい')">🔊</button></div>
+      <div class="v-kana">へいけい · Heikei</div>
+      <div class="v-np">मेनोपज / Menopause</div>
+      <div class="v-en">End of menstruation</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">規則的 <button class="speak-btn" onclick="sp('きそくてき')">🔊</button></div>
+      <div class="v-kana">きそくてき · Kisokuteki</div>
+      <div class="v-np">नियमित / Regular</div>
+      <div class="v-en">Regular cycle</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">不規則 <button class="speak-btn" onclick="sp('ふきそく')">🔊</button></div>
+      <div class="v-kana">ふきそく · Fukisoku</div>
+      <div class="v-np">अनियमित / Irregular</div>
+      <div class="v-en">Irregular cycle</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">月経遅延 <button class="speak-btn" onclick="sp('げっけいちえん')">🔊</button></div>
+      <div class="v-kana">げっけいちえん · Gekkei chien</div>
+      <div class="v-np">महिनावारी ढिलो / Period delay</div>
+      <div class="v-en">Delayed menstruation</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">無月経 <button class="speak-btn" onclick="sp('むげっけい')">🔊</button></div>
+      <div class="v-kana">むげっけい · Mugekkei</div>
+      <div class="v-np">महिनावारी नआउनु / Amenorrhea</div>
+      <div class="v-en">Absence of periods</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">過多月経 <button class="speak-btn" onclick="sp('かたげっけい')">🔊</button></div>
+      <div class="v-kana">かたげっけい · Kata gekkei</div>
+      <div class="v-np">धेरै रगत आउनु / Heavy bleeding</div>
+      <div class="v-en">Menorrhagia / Heavy flow</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">過少月経 <button class="speak-btn" onclick="sp('かしょうげっけい')">🔊</button></div>
+      <div class="v-kana">かしょうげっけい · Kashou gekkei</div>
+      <div class="v-np">थोरै रगत आउनु / Light flow</div>
+      <div class="v-en">Hypomenorrhea / Light period</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">不正出血 <button class="speak-btn" onclick="sp('ふせいしゅっけつ')">🔊</button></div>
+      <div class="v-kana">ふせいしゅっけつ · Fusei shukketsu</div>
+      <div class="v-np">अनियमित रगत / Abnormal bleeding</div>
+      <div class="v-en">Intermenstrual bleeding</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">出血量 <button class="speak-btn" onclick="sp('しゅっけつりょう')">🔊</button></div>
+      <div class="v-kana">しゅっけつりょう · Shukketsu ryou</div>
+      <div class="v-np">रगतको मात्रा / Amount of bleeding</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">血の塊 <button class="speak-btn" onclick="sp('ちのかたまり')">🔊</button></div>
+      <div class="v-kana">ちのかたまり · Chi no katamari</div>
+      <div class="v-np">रगतको डल्लो / Blood clots</div>
+      <div class="v-en">Clots in menstrual blood</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">血の色 <button class="speak-btn" onclick="sp('ちのいろ')">🔊</button></div>
+      <div class="v-kana">ちのいろ · Chi no iro</div>
+      <div class="v-np">रगतको रंग / Blood color</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">最終月経 <button class="speak-btn" onclick="sp('さいしゅうげっけい')">🔊</button></div>
+      <div class="v-kana">さいしゅうげっけい · Saishuu gekkei</div>
+      <div class="v-np">अन्तिम महिनावारी / Last period (LMP)</div>
+      <div class="v-en">Last Menstrual Period – doctor asks this</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">排卵 <button class="speak-btn" onclick="sp('はいらん')">🔊</button></div>
+      <div class="v-kana">はいらん · Hairan</div>
+      <div class="v-np">अण्डा निस्कने / Ovulation</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">排卵痛 <button class="speak-btn" onclick="sp('はいらんつう')">🔊</button></div>
+      <div class="v-kana">はいらんつう · Hairan tsuu</div>
+      <div class="v-np">अण्डा निस्कने बेलाको दुखाई / Ovulation pain</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">月経前症候群 <button class="speak-btn" onclick="sp('げっけいぜんしょうこうぐん')">🔊</button></div>
+      <div class="v-kana">げっけいぜんしょうこうぐん · PMS</div>
+      <div class="v-np">महिनावारी अघिको लक्षण / PMS</div>
+      <div class="v-en">Premenstrual Syndrome</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     2. SYMPTOMS
+═══════════════════════════════════════════ -->
+<section id="sec-symptoms">
+  <h2 class="section-title">😣 Symptoms – लक्षणहरू</h2>
+  <div class="vocab-grid">
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">痛み <button class="speak-btn" onclick="sp('いたみ')">🔊</button></div>
+      <div class="v-kana">いたみ · Itami</div>
+      <div class="v-np">दुखाई / Pain</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">生理痛 <button class="speak-btn" onclick="sp('せいりつう')">🔊</button></div>
+      <div class="v-kana">せいりつう · Seiritsuu</div>
+      <div class="v-np">महिनावारीको दुखाई / Period cramps</div>
+      <div class="v-en">Dysmenorrhea</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">下腹部痛 <button class="speak-btn" onclick="sp('かふくぶつう')">🔊</button></div>
+      <div class="v-kana">かふくぶつう · Kafukubu tsuu</div>
+      <div class="v-np">तल्लो पेट दुखाई / Lower abdominal pain</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">腰痛 <button class="speak-btn" onclick="sp('ようつう')">🔊</button></div>
+      <div class="v-kana">ようつう · Youtsuu</div>
+      <div class="v-np">कम्मर दुखाई / Back/waist pain</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">頭痛 <button class="speak-btn" onclick="sp('ずつう')">🔊</button></div>
+      <div class="v-kana">ずつう · Zutsuu</div>
+      <div class="v-np">टाउको दुखाई / Headache</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">吐き気 <button class="speak-btn" onclick="sp('はきけ')">🔊</button></div>
+      <div class="v-kana">はきけ · Hakike</div>
+      <div class="v-np">वाकवाकी / Nausea</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">嘔吐 <button class="speak-btn" onclick="sp('おうと')">🔊</button></div>
+      <div class="v-kana">おうと · Outo</div>
+      <div class="v-np">बान्ता / Vomiting</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">むくみ <button class="speak-btn" onclick="sp('むくみ')">🔊</button></div>
+      <div class="v-kana">むくみ · Mukumi</div>
+      <div class="v-np">सुन्निनु-फुल्नु / Bloating/swelling</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">かゆみ <button class="speak-btn" onclick="sp('かゆみ')">🔊</button></div>
+      <div class="v-kana">かゆみ · Kayumi</div>
+      <div class="v-np">चिलाउनु / Itching</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">発熱 <button class="speak-btn" onclick="sp('はつねつ')">🔊</button></div>
+      <div class="v-kana">はつねつ · Hatsunetsu</div>
+      <div class="v-np">ज्वरो / Fever</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">倦怠感 <button class="speak-btn" onclick="sp('けんたいかん')">🔊</button></div>
+      <div class="v-kana">けんたいかん · Kentaikan</div>
+      <div class="v-np">थकान / Fatigue/tiredness</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">めまい <button class="speak-btn" onclick="sp('めまい')">🔊</button></div>
+      <div class="v-kana">めまい · Memai</div>
+      <div class="v-np">चक्कर / Dizziness</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">貧血 <button class="speak-btn" onclick="sp('ひんけつ')">🔊</button></div>
+      <div class="v-kana">ひんけつ · Hinketsu</div>
+      <div class="v-np">रगत कमी / Anemia</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">胸の張り <button class="speak-btn" onclick="sp('むねのはり')">🔊</button></div>
+      <div class="v-kana">むねのはり · Mune no hari</div>
+      <div class="v-np">छाती फुलाउनु / Breast tenderness</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">気分の落ち込み <button class="speak-btn" onclick="sp('きぶんのおちこみ')">🔊</button></div>
+      <div class="v-kana">きぶんのおちこみ · Kibun no ochikomi</div>
+      <div class="v-np">मन खराब / Low mood/depression feeling</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">肌荒れ <button class="speak-btn" onclick="sp('はだあれ')">🔊</button></div>
+      <div class="v-kana">はだあれ · Hada are</div>
+      <div class="v-np">छाला खराब हुनु / Skin problems</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">食欲の変化 <button class="speak-btn" onclick="sp('しょくよくのへんか')">🔊</button></div>
+      <div class="v-kana">しょくよくのへんか · Shokuyoku no henka</div>
+      <div class="v-np">भोकको परिवर्तन / Appetite change</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">不眠 <button class="speak-btn" onclick="sp('ふみん')">🔊</button></div>
+      <div class="v-kana">ふみん · Fumin</div>
+      <div class="v-np">निद्रा नलाग्नु / Insomnia</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">においが気になる <button class="speak-btn" onclick="sp('においがきになる')">🔊</button></div>
+      <div class="v-kana">においがきになる</div>
+      <div class="v-np">गन्ध आउनु / Unusual smell</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">灼熱感 <button class="speak-btn" onclick="sp('しゃくねつかん')">🔊</button></div>
+      <div class="v-kana">しゃくねつかん · Shakunetsu kan</div>
+      <div class="v-np">जलन / Burning sensation</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     3. DISCHARGE
+═══════════════════════════════════════════ -->
+<section id="sec-discharge">
+  <h2 class="section-title">💧 Discharge – सेतो पानी सम्बन्धी</h2>
+  <div class="vocab-grid">
+
+    <div class="vocab-card">
+      <span class="tag tag-basic">Basic</span>
+      <div class="v-jp">おりもの <button class="speak-btn" onclick="sp('おりもの')">🔊</button></div>
+      <div class="v-kana">おりもの · Orimono</div>
+      <div class="v-np">सेतो पानी / Vaginal discharge</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">おりものの量 <button class="speak-btn" onclick="sp('おりもののりょう')">🔊</button></div>
+      <div class="v-kana">おりもののりょう</div>
+      <div class="v-np">सेतो पानीको मात्रा / Amount of discharge</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">おりものの色 <button class="speak-btn" onclick="sp('おりもののいろ')">🔊</button></div>
+      <div class="v-kana">おりもののいろ</div>
+      <div class="v-np">सेतो पानीको रंग / Color of discharge</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">においが強い <button class="speak-btn" onclick="sp('においがつよい')">🔊</button></div>
+      <div class="v-kana">においがつよい · Nioi ga tsuyoi</div>
+      <div class="v-np">कडा गन्ध / Strong smell</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">黄色いおりもの <button class="speak-btn" onclick="sp('きいろいおりもの')">🔊</button></div>
+      <div class="v-kana">きいろいおりもの</div>
+      <div class="v-np">पहेँलो सेतो पानी / Yellow discharge</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">緑色のおりもの <button class="speak-btn" onclick="sp('みどりいろのおりもの')">🔊</button></div>
+      <div class="v-kana">みどりいろのおりもの</div>
+      <div class="v-np">हरियो सेतो पानी / Green discharge</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">細菌性腟炎 <button class="speak-btn" onclick="sp('さいきんせいちつえん')">🔊</button></div>
+      <div class="v-kana">さいきんせいちつえん · BV</div>
+      <div class="v-np">ब्याक्टेरिया इन्फेक्सन / Bacterial vaginosis</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-med">Medical</span>
+      <div class="v-jp">カンジダ膣炎 <button class="speak-btn" onclick="sp('かんじだちつえん')">🔊</button></div>
+      <div class="v-kana">かんじだちつえん · Candida chitsu-en</div>
+      <div class="v-np">यीस्ट इन्फेक्सन / Yeast infection</div>
+    </div>
+
+    <div class="vocab-card">
+      <span class="tag tag-sym">Symptom</span>
+      <div class="v-jp">外陰部のかゆみ <button class="speak-btn" onclick="sp('がいいんぶのかゆみ')">🔊</button></div>
+      <div class="v-kana">がいいんぶのかゆみ</div>
+      <div class="v-np">बाहिरी भागमा चिलाउनु / Vulvar itching</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     4. CONDITIONS / DISEASES
+═══════════════════════════════════════════ -->
+<section id="sec-conditions">
+  <h2 class="section-title">🏥 Conditions & Diseases – रोगहरू</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">子宮内膜症 <button class="speak-btn" onclick="sp('しきゅうないまくしょう')">🔊</button></div>
+      <div class="ic-kana">しきゅうないまくしょう · Shikyuu naimakushou</div>
+      <div class="ic-np">Endometriosis – पाठेघरको झिल्ली बाहिर जाने रोग</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">子宮筋腫 <button class="speak-btn" onclick="sp('しきゅうきんしゅ')">🔊</button></div>
+      <div class="ic-kana">しきゅうきんしゅ · Shikyuu kinshu</div>
+      <div class="ic-np">Uterine fibroid – पाठेघरको मासुको गाँठो</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">子宮腺筋症 <button class="speak-btn" onclick="sp('しきゅうせんきんしょう')">🔊</button></div>
+      <div class="ic-kana">しきゅうせんきんしょう · Shikyuu senkin-shou</div>
+      <div class="ic-np">Adenomyosis – पाठेघरको पर्खालमा झिल्ली बढ्ने</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">卵巣嚢腫 <button class="speak-btn" onclick="sp('らんそうのうしゅ')">🔊</button></div>
+      <div class="ic-kana">らんそうのうしゅ · Ransou noushu</div>
+      <div class="ic-np">Ovarian cyst – अण्डाशयमा पानी भरिएको थैलो</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">多嚢胞性卵巣症候群 <button class="speak-btn" onclick="sp('たのうほうせいらんそうしょうこうぐん')">🔊</button></div>
+      <div class="ic-kana">たのうほうせいらんそうしょうこうぐん · PCOS</div>
+      <div class="ic-np">PCOS – अण्डाशयमा धेरै थैलो हुने रोग</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">子宮頸管炎 <button class="speak-btn" onclick="sp('しきゅうけいかんえん')">🔊</button></div>
+      <div class="ic-kana">しきゅうけいかんえん · Shikyuu keikan-en</div>
+      <div class="ic-np">Cervicitis – पाठेघरको मुखमा सूजन</div>
+    </div>
+
+    <div class="info-card ic-gold">
+      <div class="ic-jp gold">骨盤炎症性疾患 <button class="speak-btn" onclick="sp('こつばんえんしょうせいしっかん')">🔊</button></div>
+      <div class="ic-kana">こつばんえんしょうせいしっかん · PID</div>
+      <div class="ic-np">PID – पेट्रिक इन्फेक्सन / Pelvic inflammatory disease</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">卵管炎 <button class="speak-btn" onclick="sp('らんかんえん')">🔊</button></div>
+      <div class="ic-kana">らんかんえん · Rankan-en</div>
+      <div class="ic-np">Salpingitis – फेलोपियन ट्युबमा सूजन</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">月経困難症 <button class="speak-btn" onclick="sp('げっけいこんなんしょう')">🔊</button></div>
+      <div class="ic-kana">げっけいこんなんしょう · Gekkei konnan-shou</div>
+      <div class="ic-np">Dysmenorrhea – गाह्रो महिनावारी</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">更年期障害 <button class="speak-btn" onclick="sp('こうねんきしょうがい')">🔊</button></div>
+      <div class="ic-kana">こうねんきしょうがい · Kounenki shougai</div>
+      <div class="ic-np">Menopause symptoms – मेनोपजका समस्याहरू</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">性感染症 <button class="speak-btn" onclick="sp('せいかんせんしょう')">🔊</button></div>
+      <div class="ic-kana">せいかんせんしょう · STI/STD</div>
+      <div class="ic-np">यौन रोग / Sexually transmitted infection</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">子宮外妊娠 <button class="speak-btn" onclick="sp('しきゅうがいにんしん')">🔊</button></div>
+      <div class="ic-kana">しきゅうがいにんしん · Shikyuu-gai ninshin</div>
+      <div class="ic-np">Ectopic pregnancy – बाहिरी गर्भ</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     5. BODY PARTS
+═══════════════════════════════════════════ -->
+<section id="sec-body">
+  <h2 class="section-title">🫀 Body Parts – शरीरका अंगहरू</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">子宮 <button class="speak-btn" onclick="sp('しきゅう')">🔊</button></div>
+      <div class="ic-kana">しきゅう · Shikyuu</div>
+      <div class="ic-np">पाठेघर / Uterus</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">子宮頸部 <button class="speak-btn" onclick="sp('しきゅうけいぶ')">🔊</button></div>
+      <div class="ic-kana">しきゅうけいぶ · Shikyuu keibu</div>
+      <div class="ic-np">पाठेघरको मुख / Cervix</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">子宮内膜 <button class="speak-btn" onclick="sp('しきゅうないまく')">🔊</button></div>
+      <div class="ic-kana">しきゅうないまく · Shikyuu naimaku</div>
+      <div class="ic-np">पाठेघरको भित्री झिल्ली / Endometrium</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">卵巣 <button class="speak-btn" onclick="sp('らんそう')">🔊</button></div>
+      <div class="ic-kana">らんそう · Ransou</div>
+      <div class="ic-np">अण्डाशय / Ovary</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">卵管 <button class="speak-btn" onclick="sp('らんかん')">🔊</button></div>
+      <div class="ic-kana">らんかん · Rankan</div>
+      <div class="ic-np">फेलोपियन ट्युब / Fallopian tube</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">腟 / 膣 <button class="speak-btn" onclick="sp('ちつ')">🔊</button></div>
+      <div class="ic-kana">ちつ · Chitsu</div>
+      <div class="ic-np">योनि / Vagina</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">外陰部 <button class="speak-btn" onclick="sp('がいいんぶ')">🔊</button></div>
+      <div class="ic-kana">がいいんぶ · Gaiinbu</div>
+      <div class="ic-np">बाहिरी भाग / Vulva</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">骨盤 <button class="speak-btn" onclick="sp('こつばん')">🔊</button></div>
+      <div class="ic-kana">こつばん · Kotsuban</div>
+      <div class="ic-np">पेट्रिक हाड / Pelvis</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">胸 / 乳房 <button class="speak-btn" onclick="sp('にゅうぼう')">🔊</button></div>
+      <div class="ic-kana">にゅうぼう · Nyuubou</div>
+      <div class="ic-np">स्तन / Breast</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">乳頭 <button class="speak-btn" onclick="sp('にゅうとう')">🔊</button></div>
+      <div class="ic-kana">にゅうとう · Nyuutou</div>
+      <div class="ic-np">निप्पल / Nipple</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">下腹部 <button class="speak-btn" onclick="sp('かふくぶ')">🔊</button></div>
+      <div class="ic-kana">かふくぶ · Kafukubu</div>
+      <div class="ic-np">तल्लो पेट / Lower abdomen</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">腰 <button class="speak-btn" onclick="sp('こし')">🔊</button></div>
+      <div class="ic-kana">こし · Koshi</div>
+      <div class="ic-np">कम्मर / Lower back / Waist</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     6. TESTS & EXAMINATIONS
+═══════════════════════════════════════════ -->
+<section id="sec-tests">
+  <h2 class="section-title">🔬 Tests & Examinations – जाँचहरू</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">血液検査 <button class="speak-btn" onclick="sp('けつえきけんさ')">🔊</button></div>
+      <div class="ic-kana">けつえきけんさ · Ketsueki kensa</div>
+      <div class="ic-np">रगत जाँच / Blood test</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">尿検査 <button class="speak-btn" onclick="sp('にょうけんさ')">🔊</button></div>
+      <div class="ic-kana">にょうけんさ · Nyou kensa</div>
+      <div class="ic-np">पिसाब जाँच / Urine test</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">超音波検査 <button class="speak-btn" onclick="sp('ちょうおんぱけんさ')">🔊</button></div>
+      <div class="ic-kana">ちょうおんぱけんさ · Chouonpa kensa</div>
+      <div class="ic-np">अल्ट्रासाउन्ड / Ultrasound</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">経膣超音波 <button class="speak-btn" onclick="sp('けいちつちょうおんぱ')">🔊</button></div>
+      <div class="ic-kana">けいちつちょうおんぱ · Keitsu chouonpa</div>
+      <div class="ic-np">भित्रबाट अल्ट्रासाउन्ड / Transvaginal ultrasound</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">内診 <button class="speak-btn" onclick="sp('ないしん')">🔊</button></div>
+      <div class="ic-kana">ないしん · Naishin</div>
+      <div class="ic-np">भित्री जाँच / Internal/pelvic exam</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">細胞診 <button class="speak-btn" onclick="sp('さいぼうしん')">🔊</button></div>
+      <div class="ic-kana">さいぼうしん · Saiboushin</div>
+      <div class="ic-np">Pap smear / सेल जाँच</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">ホルモン検査 <button class="speak-btn" onclick="sp('ほるもんけんさ')">🔊</button></div>
+      <div class="ic-kana">ほるもんけんさ · Horumon kensa</div>
+      <div class="ic-np">हर्मोन जाँच / Hormone test</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">培養検査 <button class="speak-btn" onclick="sp('ばいようけんさ')">🔊</button></div>
+      <div class="ic-kana">ばいようけんさ · Baiyou kensa</div>
+      <div class="ic-np">कल्चर टेस्ट / Culture test (infection)</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">MRI検査 <button class="speak-btn" onclick="sp('えむあーるあいけんさ')">🔊</button></div>
+      <div class="ic-kana">えむあーるあいけんさ · MRI kensa</div>
+      <div class="ic-np">MRI जाँच / MRI scan</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">CT検査 <button class="speak-btn" onclick="sp('しーてぃーけんさ')">🔊</button></div>
+      <div class="ic-kana">しーてぃーけんさ · CT kensa</div>
+      <div class="ic-np">CT स्क्यान / CT scan</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">体温測定 <button class="speak-btn" onclick="sp('たいおんそくてい')">🔊</button></div>
+      <div class="ic-kana">たいおんそくてい · Taion sokutei</div>
+      <div class="ic-np">तापक्रम नाप्नु / Temperature measurement</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">基礎体温 <button class="speak-btn" onclick="sp('きそたいおん')">🔊</button></div>
+      <div class="ic-kana">きそたいおん · Kiso taion</div>
+      <div class="ic-np">बेसल तापक्रम / Basal body temperature (BBT)</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">子宮鏡検査 <button class="speak-btn" onclick="sp('しきゅうきょうけんさ')">🔊</button></div>
+      <div class="ic-kana">しきゅうきょうけんさ · Shikyuu kyou kensa</div>
+      <div class="ic-np">पाठेघर भित्र हेर्ने / Hysteroscopy</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">腹腔鏡検査 <button class="speak-btn" onclick="sp('ふくくうきょうけんさ')">🔊</button></div>
+      <div class="ic-kana">ふくくうきょうけんさ · Laparoscopy</div>
+      <div class="ic-np">ल्यापरोस्कोपी जाँच / Laparoscopy</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">妊娠検査 <button class="speak-btn" onclick="sp('にんしんけんさ')">🔊</button></div>
+      <div class="ic-kana">にんしんけんさ · Ninshin kensa</div>
+      <div class="ic-np">गर्भ जाँच / Pregnancy test</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">STI検査 <button class="speak-btn" onclick="sp('えすてぃーあいけんさ')">🔊</button></div>
+      <div class="ic-kana">えすてぃーあいけんさ · STI kensa</div>
+      <div class="ic-np">यौन रोग जाँच / STI screening</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     7. MEDICINE
+═══════════════════════════════════════════ -->
+<section id="sec-medicine">
+  <h2 class="section-title">💊 Medicine & Treatment – औषधि र उपचार</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">薬 <button class="speak-btn" onclick="sp('くすり')">🔊</button></div>
+      <div class="ic-kana">くすり · Kusuri</div>
+      <div class="ic-np">औषधि / Medicine</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">痛み止め <button class="speak-btn" onclick="sp('いたみどめ')">🔊</button></div>
+      <div class="ic-kana">いたみどめ · Itamidomе</div>
+      <div class="ic-np">दुखाई हटाउने / Painkiller</div>
+    </div>
+
+    <div class="info-card ic-green">
+      <div class="ic-jp green">鎮痛剤 <button class="speak-btn" onclick="sp('ちんつうざい')">🔊</button></div>
+      <div class="ic-kana">ちんつうざい · Chintsuuzai</div>
+      <div class="ic-np">दर्दनाशक / Analgesic</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">低用量ピル <button class="speak-btn" onclick="sp('ていようりょうぴる')">🔊</button></div>
+      <div class="ic-kana">ていようりょうぴる · Low-dose pill</div>
+      <div class="ic-np">गर्भनिरोधक चक्की / Birth control pill (OCP)</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">ホルモン療法 <button class="speak-btn" onclick="sp('ほるもんりょうほう')">🔊</button></div>
+      <div class="ic-kana">ほるもんりょうほう · Horumon ryouhou</div>
+      <div class="ic-np">हर्मोन उपचार / Hormone therapy</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">抗生物質 <button class="speak-btn" onclick="sp('こうせいぶっしつ')">🔊</button></div>
+      <div class="ic-kana">こうせいぶっしつ · Kousei busshitsu</div>
+      <div class="ic-np">एन्टिबायोटिक / Antibiotic</div>
+    </div>
+
+    <div class="info-card ic-orange">
+      <div class="ic-jp orange">止血剤 <button class="speak-btn" onclick="sp('しけつざい')">🔊</button></div>
+      <div class="ic-kana">しけつざい · Shiketsu-zai</div>
+      <div class="ic-np">रगत रोक्ने औषधि / Hemostatic agent</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">漢方薬 <button class="speak-btn" onclick="sp('かんぽうやく')">🔊</button></div>
+      <div class="ic-kana">かんぽうやく · Kanpou yaku</div>
+      <div class="ic-np">जापानी जडीबुटी औषधि / Herbal medicine</div>
+    </div>
+
+    <div class="info-card ic-teal">
+      <div class="ic-jp teal">座薬 <button class="speak-btn" onclick="sp('ざやく')">🔊</button></div>
+      <div class="ic-kana">ざやく · Zayaku</div>
+      <div class="ic-np">पिछाडीबाट हाल्ने औषधि / Suppository</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">手術 <button class="speak-btn" onclick="sp('しゅじゅつ')">🔊</button></div>
+      <div class="ic-kana">しゅじゅつ · Shujutsu</div>
+      <div class="ic-np">अपरेसन / Surgery/Operation</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">入院 <button class="speak-btn" onclick="sp('にゅういん')">🔊</button></div>
+      <div class="ic-kana">にゅういん · Nyuuin</div>
+      <div class="ic-np">भर्ना हुनु / Hospitalization</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">処方箋 <button class="speak-btn" onclick="sp('しょほうせん')">🔊</button></div>
+      <div class="ic-kana">しょほうせん · Shohousen</div>
+      <div class="ic-np">प्रिस्क्रिप्सन / Prescription</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     8. PREGNANCY
+═══════════════════════════════════════════ -->
+<section id="sec-pregnancy">
+  <h2 class="section-title">🤰 Pregnancy – गर्भावस्था</h2>
+  <div class="vocab-grid">
+
+    <div class="vocab-card">
+      <div class="v-jp">妊娠 <button class="speak-btn" onclick="sp('にんしん')">🔊</button></div>
+      <div class="v-kana">にんしん · Ninshin</div>
+      <div class="v-np">गर्भ / Pregnancy</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">妊娠検査薬 <button class="speak-btn" onclick="sp('にんしんけんさやく')">🔊</button></div>
+      <div class="v-kana">にんしんけんさやく</div>
+      <div class="v-np">गर्भ जाँच किट / Pregnancy test kit</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">妊娠週数 <button class="speak-btn" onclick="sp('にんしんしゅうすう')">🔊</button></div>
+      <div class="v-kana">にんしんしゅうすう · Ninshin shuusuu</div>
+      <div class="v-np">गर्भको हप्ता / Weeks pregnant</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">つわり <button class="speak-btn" onclick="sp('つわり')">🔊</button></div>
+      <div class="v-kana">つわり · Tsuwari</div>
+      <div class="v-np">बिहानको बिरामी / Morning sickness</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">流産 <button class="speak-btn" onclick="sp('りゅうざん')">🔊</button></div>
+      <div class="v-kana">りゅうざん · Ryuuzan</div>
+      <div class="v-np">गर्भपात (प्राकृतिक) / Miscarriage</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">中絶 <button class="speak-btn" onclick="sp('ちゅうぜつ')">🔊</button></div>
+      <div class="v-kana">ちゅうぜつ · Chuuzetsu</div>
+      <div class="v-np">गर्भपात (इच्छाले) / Abortion</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">出産 <button class="speak-btn" onclick="sp('しゅっさん')">🔊</button></div>
+      <div class="v-kana">しゅっさん · Shussan</div>
+      <div class="v-np">जन्म / Childbirth</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">予定日 <button class="speak-btn" onclick="sp('よていび')">🔊</button></div>
+      <div class="v-kana">よていび · Yoteibi</div>
+      <div class="v-np">जन्म मिति / Due date</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">胎児 <button class="speak-btn" onclick="sp('たいじ')">🔊</button></div>
+      <div class="v-kana">たいじ · Taiji</div>
+      <div class="v-np">भ्रूण / Fetus</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">不妊 <button class="speak-btn" onclick="sp('ふにん')">🔊</button></div>
+      <div class="v-kana">ふにん · Funin</div>
+      <div class="v-np">बाँझोपन / Infertility</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">不妊治療 <button class="speak-btn" onclick="sp('ふにんちりょう')">🔊</button></div>
+      <div class="v-kana">ふにんちりょう · Funin chiryou</div>
+      <div class="v-np">बाँझोपनको उपचार / Infertility treatment</div>
+    </div>
+
+    <div class="vocab-card">
+      <div class="v-jp">体外受精 <button class="speak-btn" onclick="sp('たいがいじゅせい')">🔊</button></div>
+      <div class="v-kana">たいがいじゅせい · IVF</div>
+      <div class="v-np">IVF / टेस्ट ट्युब शिशु</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     9. CONTRACEPTION
+═══════════════════════════════════════════ -->
+<section id="sec-contraception">
+  <h2 class="section-title">🛡️ Contraception – गर्भनिरोध</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">避妊 <button class="speak-btn" onclick="sp('ひにん')">🔊</button></div>
+      <div class="ic-kana">ひにん · Hinin</div>
+      <div class="ic-np">गर्भनिरोध / Contraception</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">ピル <button class="speak-btn" onclick="sp('ぴる')">🔊</button></div>
+      <div class="ic-kana">ぴる · Piru</div>
+      <div class="ic-np">चक्की / Pill (OCP)</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">コンドーム <button class="speak-btn" onclick="sp('こんどーむ')">🔊</button></div>
+      <div class="ic-kana">こんどーむ · Kondoomu</div>
+      <div class="ic-np">कन्डम / Condom</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">子宮内避妊具 <button class="speak-btn" onclick="sp('しきゅうないひにんぐ')">🔊</button></div>
+      <div class="ic-kana">しきゅうないひにんぐ · IUD</div>
+      <div class="ic-np">IUD / पाठेघर भित्र राख्ने साधन</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">緊急避妊薬 <button class="speak-btn" onclick="sp('きんきゅうひにんやく')">🔊</button></div>
+      <div class="ic-kana">きんきゅうひにんやく · Emergency pill</div>
+      <div class="ic-np">आपतकालीन चक्की / Emergency contraception</div>
+    </div>
+
+    <div class="info-card ic-purple">
+      <div class="ic-jp purple">卵管結紮 <button class="speak-btn" onclick="sp('らんかんけっさつ')">🔊</button></div>
+      <div class="ic-kana">らんかんけっさつ · Rankan kessatsu</div>
+      <div class="ic-np">ट्युब बाँध्ने / Tubal ligation</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     10. CANCER SCREENING
+═══════════════════════════════════════════ -->
+<section id="sec-cancer">
+  <h2 class="section-title">⚠️ Cancer & Screening – क्यान्सर जाँच</h2>
+  <div class="info-grid">
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">子宮頸がん <button class="speak-btn" onclick="sp('しきゅうけいがん')">🔊</button></div>
+      <div class="ic-kana">しきゅうけいがん · Cervical cancer</div>
+      <div class="ic-np">पाठेघरको मुखको क्यान्सर / Cervical cancer</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">子宮体がん <button class="speak-btn" onclick="sp('しきゅうたいがん')">🔊</button></div>
+      <div class="ic-kana">しきゅうたいがん · Uterine cancer</div>
+      <div class="ic-np">पाठेघरको क्यान्सर / Uterine cancer</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">卵巣がん <button class="speak-btn" onclick="sp('らんそうがん')">🔊</button></div>
+      <div class="ic-kana">らんそうがん · Ransou gan</div>
+      <div class="ic-np">अण्डाशयको क्यान्सर / Ovarian cancer</div>
+    </div>
+
+    <div class="info-card ic-rose">
+      <div class="ic-jp rose">乳がん <button class="speak-btn" onclick="sp('にゅうがん')">🔊</button></div>
+      <div class="ic-kana">にゅうがん · Nyuugan</div>
+      <div class="ic-np">स्तन क्यान्सर / Breast cancer</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">子宮頸がん検診 <button class="speak-btn" onclick="sp('しきゅうけいがんけんしん')">🔊</button></div>
+      <div class="ic-kana">しきゅうけいがんけんしん</div>
+      <div class="ic-np">पाठेघर मुख क्यान्सर स्क्रीनिंग / Cervical cancer screening</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">マンモグラフィー <button class="speak-btn" onclick="sp('まんもぐらふぃー')">🔊</button></div>
+      <div class="ic-kana">まんもぐらふぃー · Mammography</div>
+      <div class="ic-np">स्तन एक्स-रे / Mammogram</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">HPVワクチン <button class="speak-btn" onclick="sp('えいちぴーぶいわくちん')">🔊</button></div>
+      <div class="ic-kana">えいちぴーぶいわくちん · HPV vaccine</div>
+      <div class="ic-np">HPV खोप / HPV vaccine</div>
+    </div>
+
+    <div class="info-card ic-blue">
+      <div class="ic-jp blue">生検 <button class="speak-btn" onclick="sp('せいけん')">🔊</button></div>
+      <div class="ic-kana">せいけん · Seiken</div>
+      <div class="ic-np">बायोप्सी / Biopsy</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: RECEPTION
+═══════════════════════════════════════════ -->
+<section id="sec-sent-register">
+  <h2 class="section-title">💬 At Reception – Reception मा भन्ने वाक्यहरू</h2>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Reception</span>
+    <div class="sent-jp">婦人科をお願いします。</div>
+    <div class="sent-kana">ふじんか を おねがい します。</div>
+    <div class="sent-np">Gynecology विभाग चाहिन्छ।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Reception</span>
+    <div class="sent-jp">初めて来ました。</div>
+    <div class="sent-kana">はじめて きました。 (Hajimete kimashita.)</div>
+    <div class="sent-np">पहिलोपटक आएको हुँ।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Reception</span>
+    <div class="sent-jp">予約はしていません。</div>
+    <div class="sent-kana">よやく は して いません。</div>
+    <div class="sent-np">Appointment गरेको छैन।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Reception</span>
+    <div class="sent-jp">〇〇で予約した〇〇です。</div>
+    <div class="sent-kana">〇〇 で よやく した 〇〇 です。</div>
+    <div class="sent-np">[तरिका] बाट [नाम] ले appointment गरेको हुँ।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Reception</span>
+    <div class="sent-jp">保険証はこちらです。</div>
+    <div class="sent-kana">ほけんしょう は こちら です。</div>
+    <div class="sent-np">यो बीमा कार्ड हो।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Insurance</span>
+    <div class="sent-jp">健康保険証を持っています。</div>
+    <div class="sent-kana">けんこうほけんしょう を もって います。</div>
+    <div class="sent-np">स्वास्थ्य बीमा कार्ड छ।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Language</span>
+    <div class="sent-jp">日本語があまり上手ではありません。</div>
+    <div class="sent-kana">にほんご が あまり じょうず では ありません。</div>
+    <div class="sent-np">मलाई धेरै राम्रो Japanese आउँदैन।</div>
+  </div>
+
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Language</span>
+    <div class="sent-jp">英語か通訳はありますか？</div>
+    <div class="sent-kana">えいご か つうやく は ありますか？</div>
+    <div class="sent-np">English वा Translator छ?</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: DESCRIBING SYMPTOMS
+═══════════════════════════════════════════ -->
+<section id="sec-sent-symptoms">
+  <h2 class="section-title">💬 Describing Symptoms – लक्षण बताउने वाक्यहरू</h2>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Pain</span>
+    <div class="sent-jp">お腹が痛いです。</div>
+    <div class="sent-kana">おなか が いたい です。</div>
+    <div class="sent-np">पेट दुखेको छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Pain</span>
+    <div class="sent-jp">下腹部がとても痛いです。</div>
+    <div class="sent-kana">かふくぶ が とても いたい です。</div>
+    <div class="sent-np">तल्लो पेट धेरै दुखेको छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Pain</span>
+    <div class="sent-jp">腰が痛いです。</div>
+    <div class="sent-kana">こし が いたい です。</div>
+    <div class="sent-np">कम्मर दुखेको छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Pain</span>
+    <div class="sent-jp">胸が張っています。</div>
+    <div class="sent-kana">むね が はって います。</div>
+    <div class="sent-np">छाती फुलेको / दुखेको छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Bleeding</span>
+    <div class="sent-jp">出血があります。</div>
+    <div class="sent-kana">しゅっけつ が あります。</div>
+    <div class="sent-np">रगत आइरहेको छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Bleeding</span>
+    <div class="sent-jp">出血が多いです。</div>
+    <div class="sent-kana">しゅっけつ が おおい です。</div>
+    <div class="sent-np">रगत धेरै आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Bleeding</span>
+    <div class="sent-jp">出血が少ないです。</div>
+    <div class="sent-kana">しゅっけつ が すくない です。</div>
+    <div class="sent-np">रगत थोरै आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Bleeding</span>
+    <div class="sent-jp">生理じゃないのに出血があります。</div>
+    <div class="sent-kana">せいり じゃない のに しゅっけつ が あります。</div>
+    <div class="sent-np">महिनावारी नभएको बेलामा पनि रगत आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Discharge</span>
+    <div class="sent-jp">おりものが増えています。</div>
+    <div class="sent-kana">おりもの が ふえて います。</div>
+    <div class="sent-np">सेतो पानी बढी आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Discharge</span>
+    <div class="sent-jp">おりものの色がおかしいです。</div>
+    <div class="sent-kana">おりもの の いろ が おかしい です。</div>
+    <div class="sent-np">सेतो पानीको रंग अजीब छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Discharge</span>
+    <div class="sent-jp">においが気になります。</div>
+    <div class="sent-kana">におい が きになります。</div>
+    <div class="sent-np">गन्ध आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Itching</span>
+    <div class="sent-jp">外陰部がかゆいです。</div>
+    <div class="sent-kana">がいいんぶ が かゆい です。</div>
+    <div class="sent-np">बाहिरी भागमा चिलाउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Other</span>
+    <div class="sent-jp">吐き気がします。</div>
+    <div class="sent-kana">はきけ が します。</div>
+    <div class="sent-np">वाकवाकी छ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Other</span>
+    <div class="sent-jp">めまいがします。</div>
+    <div class="sent-kana">めまい が します。</div>
+    <div class="sent-np">चक्कर आउँछ।</div>
+  </div>
+
+  <div class="sent-card green">
+    <span class="sent-label lb-green">Fever</span>
+    <div class="sent-jp">熱があります。</div>
+    <div class="sent-kana">ねつ が あります。</div>
+    <div class="sent-np">ज्वरो छ।</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: PERIOD DETAILS
+═══════════════════════════════════════════ -->
+<section id="sec-sent-period">
+  <h2 class="section-title">💬 Period Details – महिनावारी बारे बताउने वाक्यहरू</h2>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Cycle</span>
+    <div class="sent-jp">生理が不規則です。</div>
+    <div class="sent-kana">せいり が ふきそく です。</div>
+    <div class="sent-np">महिनावारी अनियमित छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Cycle</span>
+    <div class="sent-jp">生理周期は約〇〇日です。</div>
+    <div class="sent-kana">せいりしゅうき は やく 〇〇 にち です。</div>
+    <div class="sent-np">महिनावारी चक्र लगभग __ दिनको छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Duration</span>
+    <div class="sent-jp">生理は〇〇日間続きます。</div>
+    <div class="sent-kana">せいり は 〇〇 にちかん つづきます。</div>
+    <div class="sent-np">महिनावारी __ दिन चल्छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Missing</span>
+    <div class="sent-jp">生理が２ヶ月来ていません。</div>
+    <div class="sent-kana">せいり が にかげつ きて いません。</div>
+    <div class="sent-np">२ महिनादेखि महिनावारी आएको छैन।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Missing</span>
+    <div class="sent-jp">最近、生理が遅れています。</div>
+    <div class="sent-kana">さいきん、せいり が おくれて います。</div>
+    <div class="sent-np">हालैदेखि महिनावारी ढिलो हुँदैछ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Too long</span>
+    <div class="sent-jp">生理が１０日以上続いています。</div>
+    <div class="sent-kana">せいり が じゅうにち いじょう つづいて います。</div>
+    <div class="sent-np">महिनावारी १० दिनभन्दा बढी भयो।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Blood clot</span>
+    <div class="sent-jp">血の塊が出ます。</div>
+    <div class="sent-kana">ち の かたまり が でます。</div>
+    <div class="sent-np">रगतको डल्लो आउँछ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Blood color</span>
+    <div class="sent-jp">血の色が茶色です。</div>
+    <div class="sent-kana">ち の いろ が ちゃいろ です。</div>
+    <div class="sent-np">रगत खैरो रंगको छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Blood color</span>
+    <div class="sent-jp">血の色が黒っぽいです。</div>
+    <div class="sent-kana">ち の いろ が くろっぽい です。</div>
+    <div class="sent-np">रगत कालो जस्तो छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Last period</span>
+    <div class="sent-jp">最終月経は〇月〇日から始まりました。</div>
+    <div class="sent-kana">さいしゅうげっけい は 〇がつ 〇にち から はじまりました。</div>
+    <div class="sent-np">अन्तिम महिनावारी __ महिना __ तारिखबाट सुरु भयो।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">PMS</span>
+    <div class="sent-jp">生理前にイライラします。</div>
+    <div class="sent-kana">せいりまえ に いらいら します。</div>
+    <div class="sent-np">महिनावारी अघि चिडचिड हुन्छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">PMS</span>
+    <div class="sent-jp">生理前に胸が張ります。</div>
+    <div class="sent-kana">せいりまえ に むね が はります。</div>
+    <div class="sent-np">महिनावारी अघि छाती फुल्छ।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Pain level</span>
+    <div class="sent-jp">痛みがひどくて学校・仕事に行けません。</div>
+    <div class="sent-kana">いたみ が ひどくて がっこう・しごと に いけません。</div>
+    <div class="sent-np">दुखाई यति गाह्रो छ कि स्कुल/काममा जान सक्दिन।</div>
+  </div>
+
+  <div class="sent-card blue">
+    <span class="sent-label lb-blue">Ovulation</span>
+    <div class="sent-jp">排卵のころに出血があります。</div>
+    <div class="sent-kana">はいらん の ころ に しゅっけつ が あります。</div>
+    <div class="sent-np">Ovulation को बेलामा रगत आउँछ।</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: DOCTOR Q&A
+═══════════════════════════════════════════ -->
+<section id="sec-sent-doctor">
+  <h2 class="section-title">💬 Doctor Q&A – Doctor सँग कुराकानी</h2>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">どんな病気が考えられますか？</div>
+    <div class="sent-kana">どんな びょうき が かんがえられますか？</div>
+    <div class="sent-np">कस्तो रोग हुन सक्छ?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">どんな検査をしますか？</div>
+    <div class="sent-kana">どんな けんさ を しますか？</div>
+    <div class="sent-np">कस्तो जाँच गर्नुहुन्छ?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">内診はありますか？</div>
+    <div class="sent-kana">ないしん は ありますか？</div>
+    <div class="sent-np">भित्री जाँच गरिन्छ?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">結果はいつわかりますか？</div>
+    <div class="sent-kana">けっか は いつ わかりますか？</div>
+    <div class="sent-np">नतिजा कहिले थाहा हुन्छ?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">次回はいつ来ればいいですか？</div>
+    <div class="sent-kana">じかい は いつ くれば いい ですか？</div>
+    <div class="sent-np">अर्कोपटक कहिले आउने?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Asking</span>
+    <div class="sent-jp">妊娠の可能性はありますか？</div>
+    <div class="sent-kana">にんしん の かのうせい は ありますか？</div>
+    <div class="sent-np">गर्भ रहेको सम्भावना छ?</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">History</span>
+    <div class="sent-jp">以前に手術を受けたことがあります。</div>
+    <div class="sent-kana">いぜん に しゅじゅつ を うけた こと が あります。</div>
+    <div class="sent-np">अघि अपरेसन भएको थियो।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">History</span>
+    <div class="sent-jp">アレルギーはありません。</div>
+    <div class="sent-kana">あれるぎー は ありません。</div>
+    <div class="sent-np">Allergy छैन।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">History</span>
+    <div class="sent-jp">〇〇にアレルギーがあります。</div>
+    <div class="sent-kana">〇〇 に あれるぎー が あります。</div>
+    <div class="sent-np">__ मा Allergy छ।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">History</span>
+    <div class="sent-jp">現在、〇〇の薬を飲んでいます。</div>
+    <div class="sent-kana">げんざい、〇〇 の くすり を のんで います。</div>
+    <div class="sent-np">अहिले __ औषधि खाइरहेको/राखेको छु।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Understanding</span>
+    <div class="sent-jp">もう一度言っていただけますか？</div>
+    <div class="sent-kana">もう いちど いって いただけますか？</div>
+    <div class="sent-np">एकपटक फेरि भन्नु होस् please।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Understanding</span>
+    <div class="sent-jp">ゆっくり話してください。</div>
+    <div class="sent-kana">ゆっくり はなして ください。</div>
+    <div class="sent-np">बिस्तारै बोल्नु होस्।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Understanding</span>
+    <div class="sent-jp">書いていただけますか？</div>
+    <div class="sent-kana">かいて いただけますか？</div>
+    <div class="sent-np">लेखिदिनु होस् please।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Pregnancy</span>
+    <div class="sent-jp">妊娠しているかもしれません。</div>
+    <div class="sent-kana">にんしん して いる かも しれません。</div>
+    <div class="sent-np">गर्भ रहेको हुन सक्छ।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Pregnancy</span>
+    <div class="sent-jp">妊娠を希望しています。</div>
+    <div class="sent-kana">にんしん を きぼう して います。</div>
+    <div class="sent-np">गर्भ चाहन्छु।</div>
+  </div>
+
+  <div class="sent-card purple">
+    <span class="sent-label lb-purple">Pregnancy</span>
+    <div class="sent-jp">今は妊娠を希望していません。</div>
+    <div class="sent-kana">いま は にんしん を きぼう して いません。</div>
+    <div class="sent-np">अहिले गर्भ चाहँदिन।</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: MEDICINE
+═══════════════════════════════════════════ -->
+<section id="sec-sent-medicine">
+  <h2 class="section-title">💬 Medicine – औषधि बारे वाक्यहरू</h2>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Prescription</span>
+    <div class="sent-jp">この薬はどうやって飲みますか？</div>
+    <div class="sent-kana">この くすり は どうやって のみますか？</div>
+    <div class="sent-np">यो औषधि कसरी खाने?</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Prescription</span>
+    <div class="sent-jp">一日何回飲みますか？</div>
+    <div class="sent-kana">いちにち なんかい のみますか？</div>
+    <div class="sent-np">दिनमा कति पटक खाने?</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Prescription</span>
+    <div class="sent-jp">食後に飲んでください。</div>
+    <div class="sent-kana">しょくご に のんで ください。</div>
+    <div class="sent-np">खाना खाएपछि खानु होस्। (Doctor le bhanchan)</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Prescription</span>
+    <div class="sent-jp">食前に飲んでください。</div>
+    <div class="sent-kana">しょくぜん に のんで ください。</div>
+    <div class="sent-np">खाना खानुअघि खानु होस्।</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Side effects</span>
+    <div class="sent-jp">副作用はありますか？</div>
+    <div class="sent-kana">ふくさよう は ありますか？</div>
+    <div class="sent-np">Side effects छ?</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Pill</span>
+    <div class="sent-jp">ピルをもらえますか？</div>
+    <div class="sent-kana">ぴる を もらえますか？</div>
+    <div class="sent-np">Pill दिन सक्नुहुन्छ?</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Pill</span>
+    <div class="sent-jp">生理痛のためにピルを飲みたいです。</div>
+    <div class="sent-kana">せいりつう の ために ぴる を のみたい です。</div>
+    <div class="sent-np">महिनावारीको दुखाईका लागि Pill खान चाहन्छु।</div>
+  </div>
+
+  <div class="sent-card gold">
+    <span class="sent-label lb-gold">Emergency</span>
+    <div class="sent-jp">緊急避妊薬をください。</div>
+    <div class="sent-kana">きんきゅうひにんやく を ください。</div>
+    <div class="sent-np">Emergency contraceptive pill दिनुस्।</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SENTENCES: PREGNANCY
+═══════════════════════════════════════════ -->
+<section id="sec-sent-preg">
+  <h2 class="section-title">💬 Pregnancy Sentences – गर्भावस्था वाक्यहरू</h2>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Pregnancy</span>
+    <div class="sent-jp">妊娠しているかどうか確認したいです。</div>
+    <div class="sent-kana">にんしん して いる かどうか かくにん したい です。</div>
+    <div class="sent-np">गर्भ छ कि छैन थाहा पाउन चाहन्छु।</div>
+  </div>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Pregnancy</span>
+    <div class="sent-jp">妊娠検査薬で陽性でした。</div>
+    <div class="sent-kana">にんしんけんさやく で ようせい でした。</div>
+    <div class="sent-np">Pregnancy test positive आयो।</div>
+  </div>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Pregnancy</span>
+    <div class="sent-jp">つわりがひどいです。</div>
+    <div class="sent-kana">つわり が ひどい です。</div>
+    <div class="sent-np">बिहानको बिरामी धेरै गाह्रो छ।</div>
+  </div>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Miscarriage</span>
+    <div class="sent-jp">流産の心配があります。</div>
+    <div class="sent-kana">りゅうざん の しんぱい が あります。</div>
+    <div class="sent-np">Miscarriage को चिन्ता छ।</div>
+  </div>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Infertility</span>
+    <div class="sent-jp">なかなか妊娠できません。</div>
+    <div class="sent-kana">なかなか にんしん できません。</div>
+    <div class="sent-np">गर्भ रहँदैन।</div>
+  </div>
+
+  <div class="sent-card teal">
+    <span class="sent-label lb-teal">Infertility</span>
+    <div class="sent-jp">不妊治療を考えています。</div>
+    <div class="sent-kana">ふにんちりょう を かんがえて います。</div>
+    <div class="sent-np">Infertility treatment बारे सोच्दैछु।</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EMERGENCY
+═══════════════════════════════════════════ -->
+<section id="sec-emergency">
+  <h2 class="section-title">🚨 Emergency – आपतकालीन वाक्यहरू</h2>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">🚑 救急車を呼んでください！</div>
+    <div class="emerg-kana">きゅうきゅうしゃ を よんで ください！</div>
+    <div class="emerg-np">Ambulance बोलाइदिनुस् please!</div>
+  </div>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">出血が止まりません！</div>
+    <div class="emerg-kana">しゅっけつ が とまりません！</div>
+    <div class="emerg-np">रगत बन्द भएको छैन!</div>
+  </div>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">急に激しい腹痛があります！</div>
+    <div class="emerg-kana">きゅう に はげしい ふくつう が あります！</div>
+    <div class="emerg-np">अचानक धेरै गाह्रो पेट दुखेको छ!</div>
+  </div>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">意識がもうろうとしています。</div>
+    <div class="emerg-kana">いしき が もうろう と して います。</div>
+    <div class="emerg-np">होश गुम्दैछ / अँध्यारो देखिँदैछ।</div>
+  </div>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">気を失いそうです。</div>
+    <div class="emerg-kana">き を うしないそう です。</div>
+    <div class="emerg-np">बेहोस हुने जस्तो छ।</div>
+  </div>
+
+  <div class="emerg-card">
+    <div class="emerg-jp">妊娠中かもしれません。すごく痛いです！</div>
+    <div class="emerg-kana">にんしんちゅう かも しれません。すごく いたい です！</div>
+    <div class="emerg-np">गर्भ रहेको हुन सक्छ। धेरै दुखेको छ!</div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════════════════════════════
+     COLORS OF BLOOD
+═══════════════════════════════════════════ -->
+<section id="sec-colors">
+  <h2 class="section-title">🎨 Blood & Discharge Colors – रगत र सेतो पानीको रंग</h2>
+  <div class="small-grid">
+    <div class="sm-card"><div class="sm-jp" style="color:#c03030">赤</div><div class="sm-kana">あか · Aka</div><div class="sm-np">🔴 रातो / Red</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#b05010">茶色</div><div class="sm-kana">ちゃいろ · Chairo</div><div class="sm-np">🟤 खैरो / Brown</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#222">黒</div><div class="sm-kana">くろ · Kuro</div><div class="sm-np">⚫ कालो / Black</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#c06080">ピンク</div><div class="sm-kana">ぴんく · Pinku</div><div class="sm-np">🩷 गुलाबी / Pink</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#c0a000">黄色</div><div class="sm-kana">きいろ · Kiiro</div><div class="sm-np">🟡 पहेँलो / Yellow</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#3a8a3a">緑</div><div class="sm-kana">みどり · Midori</div><div class="sm-np">🟢 हरियो / Green</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#606060">灰色</div><div class="sm-kana">はいいろ · Haiiro</div><div class="sm-np">⚪ खरानी / Gray</div></div>
+    <div class="sm-card"><div class="sm-jp" style="color:#f0f0f0; background:#aaa; border-radius:6px; padding:2px 4px">白</div><div class="sm-kana">しろ · Shiro</div><div class="sm-np">⬜ सेतो / White</div></div>
+    <div class="sm-card"><div class="sm-jp">濃い</div><div class="sm-kana">こい · Koi</div><div class="sm-np">गाढा / Dark</div></div>
+    <div class="sm-card"><div class="sm-jp">薄い</div><div class="sm-kana">うすい · Usui</div><div class="sm-np">हल्का / Light</div></div>
+    <div class="sm-card"><div class="sm-jp">鮮やか</div><div class="sm-kana">あざやか · Azayaka</div><div class="sm-np">चम्किलो / Bright</div></div>
+    <div class="sm-card"><div class="sm-jp">くすんだ</div><div class="sm-kana">Kusunda</div><div class="sm-np">मलिन / Dull</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     NUMBERS & TIME
+═══════════════════════════════════════════ -->
+<section id="sec-numbers">
+  <h2 class="section-title">🔢 Numbers & Time – संख्या र समय</h2>
+  <p style="font-size:0.82rem; color:var(--muted); margin-bottom:0.8rem;">Doctor le "कति दिन?" "कहिलेदेखि?" सोध्दा प्रयोग गर्नुस्।</p>
+  <div class="small-grid">
+    <div class="sm-card"><div class="sm-jp">１日</div><div class="sm-kana">いちにち</div><div class="sm-np">1 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">２日</div><div class="sm-kana">ふつか</div><div class="sm-np">2 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">３日</div><div class="sm-kana">みっか</div><div class="sm-np">3 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">４日</div><div class="sm-kana">よっか</div><div class="sm-np">4 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">５日</div><div class="sm-kana">いつか</div><div class="sm-np">5 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">７日</div><div class="sm-kana">なのか</div><div class="sm-np">7 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">10日</div><div class="sm-kana">とおか</div><div class="sm-np">10 दिन</div></div>
+    <div class="sm-card"><div class="sm-jp">２週間</div><div class="sm-kana">にしゅうかん</div><div class="sm-np">2 हप्ता</div></div>
+    <div class="sm-card"><div class="sm-jp">１ヶ月</div><div class="sm-kana">いっかげつ</div><div class="sm-np">1 महिना</div></div>
+    <div class="sm-card"><div class="sm-jp">２ヶ月</div><div class="sm-kana">にかげつ</div><div class="sm-np">2 महिना</div></div>
+    <div class="sm-card"><div class="sm-jp">３ヶ月</div><div class="sm-kana">さんかげつ</div><div class="sm-np">3 महिना</div></div>
+    <div class="sm-card"><div class="sm-jp">毎月</div><div class="sm-kana">まいつき</div><div class="sm-np">हरेक महिना</div></div>
+    <div class="sm-card"><div class="sm-jp">昨日から</div><div class="sm-kana">きのうから</div><div class="sm-np">हिजोदेखि</div></div>
+    <div class="sm-card"><div class="sm-jp">今朝から</div><div class="sm-kana">けさから</div><div class="sm-np">आजसिरदेखि</div></div>
+    <div class="sm-card"><div class="sm-jp">先週から</div><div class="sm-kana">せんしゅうから</div><div class="sm-np">गत हप्तादेखि</div></div>
+    <div class="sm-card"><div class="sm-jp">ずっと前</div><div class="sm-kana">ずっとまえ</div><div class="sm-np">धेरै अघिदेखि</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     DESCRIBE PAIN
+═══════════════════════════════════════════ -->
+<section id="sec-describe">
+  <h2 class="section-title">📝 Describing Pain – दुखाई कस्तो छ भन्न</h2>
+  <div class="small-grid">
+    <div class="sm-card"><div class="sm-jp">激しい</div><div class="sm-kana">はげしい · Hageshii</div><div class="sm-np">धेरै गाह्रो / Severe</div></div>
+    <div class="sm-card"><div class="sm-jp">ひどい</div><div class="sm-kana">ひどい · Hidoi</div><div class="sm-np">गाह्रो / Terrible</div></div>
+    <div class="sm-card"><div class="sm-jp">軽い</div><div class="sm-kana">かるい · Karui</div><div class="sm-np">हल्का / Mild</div></div>
+    <div class="sm-card"><div class="sm-jp">ズキズキ</div><div class="sm-kana">ずきずき · Zukizuki</div><div class="sm-np">धड्धड् दुख्नु / Throbbing</div></div>
+    <div class="sm-card"><div class="sm-jp">シクシク</div><div class="sm-kana">しくしく · Shikushiku</div><div class="sm-np">चिम्टिएको दुखाई / Dull ache</div></div>
+    <div class="sm-card"><div class="sm-jp">刺すような</div><div class="sm-kana">さすような</div><div class="sm-np">सुई जस्तै / Sharp/stabbing</div></div>
+    <div class="sm-card"><div class="sm-jp">締め付けられる</div><div class="sm-kana">しめつけられる</div><div class="sm-np">कस्सिएको / Squeezing</div></div>
+    <div class="sm-card"><div class="sm-jp">だるい</div><div class="sm-kana">Darui</div><div class="sm-np">भारी/थकित / Heavy/lethargic</div></div>
+    <div class="sm-card"><div class="sm-jp">断続的</div><div class="sm-kana">だんぞくてき</div><div class="sm-np">आउने-जाने / Intermittent</div></div>
+    <div class="sm-card"><div class="sm-jp">継続的</div><div class="sm-kana">けいぞくてき</div><div class="sm-np">निरन्तर / Constant</div></div>
+    <div class="sm-card"><div class="sm-jp">突然</div><div class="sm-kana">とつぜん · Totsuzen</div><div class="sm-np">अचानक / Sudden</div></div>
+    <div class="sm-card"><div class="sm-jp">徐々に</div><div class="sm-kana">じょじょに · Jojo ni</div><div class="sm-np">बिस्तारै / Gradually</div></div>
+  </div>
+
+  <br>
+  <p style="font-size:0.85rem; color:var(--muted); margin-bottom:0.6rem;"><strong>दुखाईको स्तर भन्ने वाक्य:</strong></p>
+  <div class="sent-card">
+    <span class="sent-label lb-rose">Pain Scale</span>
+    <div class="sent-jp">痛みは10点中〇点くらいです。</div>
+    <div class="sent-kana">いたみ は じゅってん ちゅう 〇てん くらい です。</div>
+    <div class="sent-np">दुखाई १०मा __ जति छ। (१=थोरै, १०=धेरै)</div>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  🌸 婦人科 Complete Nepali–Japanese Guide<br>
+  <small>Japan Hospital ma Nepali bhaneko haru ko lagi | नेपाली बोल्नेहरूका लागि बनाइएको</small>
+</footer>
+
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="माथि जानुस्">↑</button>
+
+<script>
+function sp(text) {
+  if ('speechSynthesis' in window) {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ja-JP'; u.rate = 0.8; u.pitch = 1;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+}
+
+// Show/hide scroll top button
+window.addEventListener('scroll', () => {
+  document.getElementById('top-btn').style.display = window.scrollY > 400 ? 'flex' : 'none';
+});
+document.getElementById('top-btn').style.display = 'none';
+</script>
+</body>
+</html>
